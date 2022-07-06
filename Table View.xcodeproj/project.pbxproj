@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		5537ACB92875427700076380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACB82875427700076380 /* AppDelegate.swift */; };
 		5537ACBB2875427700076380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACBA2875427700076380 /* SceneDelegate.swift */; };
-		5537ACBD2875427700076380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACBC2875427700076380 /* ViewController.swift */; };
 		5537ACC02875427700076380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5537ACBE2875427700076380 /* Main.storyboard */; };
 		5537ACC22875427800076380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5537ACC12875427800076380 /* Assets.xcassets */; };
 		5537ACC52875427800076380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5537ACC32875427800076380 /* LaunchScreen.storyboard */; };
+		5537ACD428754A0900076380 /* TankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACD328754A0900076380 /* TankTableViewController.swift */; };
+		5537ACD628754A6500076380 /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACD528754A6500076380 /* AddEditTableViewController.swift */; };
+		5537ACD828754AC900076380 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACD728754AC900076380 /* Tank.swift */; };
+		5537ACDA28754DC300076380 /* TypeOfTank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACD928754DC300076380 /* TypeOfTank.swift */; };
+		5537ACDC28754F9400076380 /* TankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACDB28754F9400076380 /* TankCell.swift */; };
+		5537ACDE2875509A00076380 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACDD2875509A00076380 /* CellManager.swift */; };
+		5537ACE02875941C00076380 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537ACDF2875941C00076380 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5537ACB52875427700076380 /* Table View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5537ACB82875427700076380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5537ACBA2875427700076380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5537ACBC2875427700076380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5537ACBF2875427700076380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5537ACC12875427800076380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5537ACC42875427800076380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5537ACC62875427800076380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5537ACD328754A0900076380 /* TankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankTableViewController.swift; sourceTree = "<group>"; };
+		5537ACD528754A6500076380 /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
+		5537ACD728754AC900076380 /* Tank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		5537ACD928754DC300076380 /* TypeOfTank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTank.swift; sourceTree = "<group>"; };
+		5537ACDB28754F9400076380 /* TankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankCell.swift; sourceTree = "<group>"; };
+		5537ACDD2875509A00076380 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		5537ACDF2875941C00076380 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		5537ACB72875427700076380 /* Table View */ = {
 			isa = PBXGroup;
 			children = (
-				5537ACB82875427700076380 /* AppDelegate.swift */,
-				5537ACBA2875427700076380 /* SceneDelegate.swift */,
-				5537ACBC2875427700076380 /* ViewController.swift */,
-				5537ACBE2875427700076380 /* Main.storyboard */,
-				5537ACC12875427800076380 /* Assets.xcassets */,
-				5537ACC32875427800076380 /* LaunchScreen.storyboard */,
-				5537ACC62875427800076380 /* Info.plist */,
+				5537ACD2287549B500076380 /* Managers */,
+				5537ACD1287549A400076380 /* Models */,
+				5537ACCC2875493100076380 /* Supporting Files */,
+				5537ACCD2875497700076380 /* View Controllers */,
+				5537ACCE2875497F00076380 /* Views */,
 			);
 			path = "Table View";
+			sourceTree = "<group>";
+		};
+		5537ACCC2875493100076380 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACB82875427700076380 /* AppDelegate.swift */,
+				5537ACC12875427800076380 /* Assets.xcassets */,
+				5537ACC62875427800076380 /* Info.plist */,
+				5537ACBA2875427700076380 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5537ACCD2875497700076380 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACD328754A0900076380 /* TankTableViewController.swift */,
+				5537ACD528754A6500076380 /* AddEditTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5537ACCE2875497F00076380 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACD02875499800076380 /* Cells */,
+				5537ACCF2875498A00076380 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5537ACCF2875498A00076380 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACC32875427800076380 /* LaunchScreen.storyboard */,
+				5537ACBE2875427700076380 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5537ACD02875499800076380 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACDB28754F9400076380 /* TankCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5537ACD1287549A400076380 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACD728754AC900076380 /* Tank.swift */,
+				5537ACD928754DC300076380 /* TypeOfTank.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5537ACD2287549B500076380 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5537ACDD2875509A00076380 /* CellManager.swift */,
+				5537ACDF2875941C00076380 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5537ACBD2875427700076380 /* ViewController.swift in Sources */,
 				5537ACB92875427700076380 /* AppDelegate.swift in Sources */,
+				5537ACD428754A0900076380 /* TankTableViewController.swift in Sources */,
+				5537ACD828754AC900076380 /* Tank.swift in Sources */,
+				5537ACD628754A6500076380 /* AddEditTableViewController.swift in Sources */,
+				5537ACDA28754DC300076380 /* TypeOfTank.swift in Sources */,
+				5537ACDC28754F9400076380 /* TankCell.swift in Sources */,
 				5537ACBB2875427700076380 /* SceneDelegate.swift in Sources */,
+				5537ACE02875941C00076380 /* DataManager.swift in Sources */,
+				5537ACDE2875509A00076380 /* CellManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZAR2UCDS8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Table View/Info.plist";
+				INFOPLIST_FILE = "Table View/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZAR2UCDS8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Table View/Info.plist";
+				INFOPLIST_FILE = "Table View/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

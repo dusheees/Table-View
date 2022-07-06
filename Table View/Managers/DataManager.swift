@@ -13,6 +13,7 @@ class DataManager {
             return nil
         }
         return documetDirector.appendingPathComponent("tanks").appendingPathExtension("plist")
+
     }
     
     func loadTanks() -> [Tank]? {
@@ -30,6 +31,7 @@ class DataManager {
         guard let encodedEmojis = try? encoder.encode(tanks) else { return }
         
         try? encodedEmojis.write(to: archiveURL, options: .noFileProtection)
+        print(archiveURL)
     }
 }
 
